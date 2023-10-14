@@ -22,6 +22,9 @@
     "lint:fix": "biome check ./src --apply",
     "lint:fix:unsafe": "biome check ./src --apply-unsafe"
   },
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
+  },
   "dependencies": {
     "@nestjs/common": "^10.2.7",
     "@nestjs/core": "^10.2.7",
