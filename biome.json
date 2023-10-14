@@ -1,0 +1,46 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "organizeImports": {
+    "enabled": false
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "nursery": {
+        "useHookAtTopLevel": "error"
+      },
+      "style": {
+        "noUnusedTemplateLiteral": "warn",
+        "noVar": "error"
+      },
+      "correctness": {
+        "noUnusedVariables": "error",
+        "noVoidTypeReturn": "warn"
+      },
+      "suspicious": {
+        "noConsoleLog": "off"  ,      
+        "noDuplicateJsxProps": "error"
+      }
+    }
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "indentSize": 2,
+    "lineWidth": 80
+  },
+  "javascript": {
+    "formatter": {
+      "semicolons": "asNeeded",
+      "quoteStyle": "single"
+    }
+  },
+  "files": {
+    "ignore": [
+      "node_modules/*",
+      "dist/*",
+      "storybook-static/*"
+    ]
+  }
+}
